@@ -1,6 +1,6 @@
 {
   "name": "gulp-angularjs-starter-project",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A started project using AngularJS and Compass.",
   "main": "index.js",
   "scripts": {
