@@ -55,7 +55,8 @@ gulp.task('lint', function() {
     return gulp.src('./app/assets/javascripts/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
-        .pipe(jshint.reporter('fail'));
+        .pipe(jshint.reporter('fail'))
+        .pipe(refresh(lrserver));
 });
 
 gulp.task('views', function() {
@@ -100,6 +101,7 @@ gulp.task('reload:html', function () {
 
 gulp.task('watch', function () {
     gulp.watch('app/assets/stylesheets/**/*.scss', ['compass']);
+    gulp.watch('app/assets/javascripts/**/*.js', ['lint']);
     gulp.watch('app/**/*.html', ['reload:html']);
 });
 

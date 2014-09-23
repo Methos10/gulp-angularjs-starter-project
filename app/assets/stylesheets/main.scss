@@ -12,9 +12,10 @@ body {
 
 [ng-view] {
     display: flex;
-    align-content: center;
+    align-items: center;
+    align-content: stretch;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     height: 100%;
 }
 
