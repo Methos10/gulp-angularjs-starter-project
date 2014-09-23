@@ -1,5 +1,6 @@
 # Directories
 node_modules/
+app/assets/components/
 build/
 .sass-cache/
 .tmp/
